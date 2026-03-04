@@ -182,39 +182,6 @@ To deploy this application on a live system:
 ```bash
 mvn clean package
 ```
-
-**2. Configure the server port** (optional)
-
-Edit `HttpServer.java` line 26 to change the port:
-```java
-serverSocket = new ServerSocket(8080); // Change to desired port
-```
-
-**3. Create a JAR with dependencies**
-
-Add to your `pom.xml`:
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-assembly-plugin</artifactId>
-    <configuration>
-        <archive>
-            <manifest>
-                <mainClass>WebFramework.App</mainClass>
-            </manifest>
-        </archive>
-        <descriptorRefs>
-            <descriptorRef>jar-with-dependencies</descriptorRef>
-        </descriptorRefs>
-    </configuration>
-</plugin>
-```
-
-**4. Run the packaged application**
-```bash
-java -jar target/Web-Framework-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
-
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management and Build Tool
