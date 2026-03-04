@@ -29,8 +29,9 @@ Follow these steps to get a development environment running:
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/Web-Framework.git
-cd Web-Framework
+git clone https://github.com/Rogerrdz/Web-Framework-Development-for-REST-Services-and-Static-File-Management.git
+
+cd Web-Framework-Development-for-REST-Services-and-Static-File-Management
 ```
 
 **2. Compile the project**
@@ -137,19 +138,6 @@ public void testQueryParameterExtraction() {
     assertEquals("Pedro", request.getValues("name"));
 }
 ```
-
-### Coding style tests
-
-The project follows Java coding conventions and best practices:
-
-```bash
-# Check for compilation warnings
-mvn clean compile -Xlint:all
-
-# Run static code analysis (if configured)
-mvn checkstyle:check
-```
-
 ## API Reference
 
 ### Core Methods
@@ -261,31 +249,10 @@ Web-Framework/
 └── README.md
 ```
 
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/yourusername/Web-Framework/tags).
-
-Current version: **1.0-SNAPSHOT**
-
 ## Authors
 
-* **Your Name** - *Initial work and framework development*
-
-See also the list of [contributors](https://github.com/yourusername/Web-Framework/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Roger Rodriguez** - *Initial work and framework development*
+* **Github - User** - Rogerrdz
 
 ## Acknowledgments
 
@@ -293,19 +260,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Built as part of the AREP (Arquitecturas Empresariales) course
 * Special thanks to the Java community for excellent documentation
 * Lambda expressions make this framework possible and elegant
-
-## Future Enhancements
-
-- [ ] Support for POST, PUT, DELETE HTTP methods
-- [ ] Middleware/filter support
-- [ ] Template engine integration
-- [ ] WebSocket support
-- [ ] Session management
-- [ ] JSON serialization/deserialization
-- [ ] HTTPS support
-- [ ] Request logging
-- [ ] Error handling middleware
-- [ ] Path parameters (e.g., `/users/:id`)
 
 ## Troubleshooting
 
